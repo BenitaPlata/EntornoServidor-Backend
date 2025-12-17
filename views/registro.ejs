@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="<%= tema %>">
+
+  <h1>Registro</h1>
+
+  <p>Únete a la comunidad y empieza tu camino de conexión interior.</p>
+
+
+  <% if (errores.length > 0) { %>
+    <ul>
+      <% errores.forEach(error => { %>
+        <li><%= error %></li>
+      <% }) %>
+    </ul>
+  <% } %>
+
+  <form action="/registro" method="POST">
+
+    <label>
+      Nombre:
+      <input type="text" name="nombre">
+    </label><br><br>
+
+    <label>
+      Email:
+      <input type="email" name="email">
+    </label><br><br>
+
+    <label>
+      Edad:
+      <input type="number" name="edad" min="1">
+    </label><br><br>
+
+    <label>
+      Ciudad:
+      <input type="text" name="ciudad">
+    </label><br><br>
+
+    <p>Intereses:</p>
+    <label>
+      <input type="checkbox" name="intereses" value="meditacion">
+      Meditación
+    </label><br>
+
+    <label>
+      <input type="checkbox" name="intereses" value="energia">
+      Energía
+    </label><br>
+
+    <label>
+      <input type="checkbox" name="intereses" value="consciencia">
+      Consciencia
+    </label><br><br>
+
+    <button type="submit">Registrarse</button>
+
+  </form>
+<footer>
+  <p>🌿 Sueños Valenti · Espacio de conexión y bienestar</p>
+</footer>
+
+</body>
+</html>

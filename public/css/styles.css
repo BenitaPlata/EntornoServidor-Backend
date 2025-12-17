@@ -1,0 +1,149 @@
+/* --------------------
+   Tema claro / oscuro
+--------------------- */
+
+body.claro {
+  background-color: #f5f3ef;   /* beige suave */
+  color: #2e2e2e;
+}
+
+body.oscuro {
+  background-color: #2f3e3a;   /* verde oscuro calmado */
+  color: #f1f1f1;
+}
+
+/* --------------------
+   Estilo general
+--------------------- */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 40px;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+p {
+  max-width: 600px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* --------------------
+   Navegación
+--------------------- */
+
+nav {
+  margin: 20px 0;
+}
+
+nav a {
+  text-decoration: none;
+  margin-right: 15px;
+  font-weight: bold;
+  color: #6b8f7b; /* verde salvia */
+}
+
+body.oscuro nav a {
+  color: #b7d1c2;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* --------------------
+   Formularios
+--------------------- */
+
+form {
+  max-width: 420px;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+body.oscuro form {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+label {
+  display: block;
+  margin-bottom: 12px;
+}
+
+input {
+  width: 100%;
+  padding: 6px;
+  margin-top: 4px;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #6b8f7b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+
+/* --------------------
+   Footer
+--------------------- */
+
+footer {
+  
+  margin-top: 40px;
+  font-size: 0.9em;
+  opacity: 0.7;
+  text-align: center; 
+}
+
+/* --------------------
+   Listas (Sesiones / Carrito)
+--------------------- */
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  max-width: 500px;
+}
+
+li {
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body.oscuro li {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* --------------------
+   Enlaces de acción (Añadir / Vaciar)
+--------------------- */
+
+a {
+  color: #6b8f7b;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+body.oscuro a {
+  color: #b7d1c2;
+}
+
+a:hover {
+  text-decoration: underline;
+}

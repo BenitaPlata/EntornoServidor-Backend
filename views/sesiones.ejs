@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Sesiones</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="<%= tema %>">
+
+  <nav>
+    <a href="/">Inicio</a> |
+    <a href="/sesiones">Sesiones</a> |
+    <a href="/perfil">Perfil</a> |
+    <a href="/preferencias">Preferencias</a>
+  </nav>
+
+  <h1>Sesiones disponibles</h1>
+
+  <p>Selecciona las sesiones que deseas añadir a tu carrito espiritual.</p>
+
+  <ul>
+    <% sesiones.forEach(sesion => { %>
+      <li>
+        <%= sesion %>
+        <a href="/carrito/agregar/<%= sesion %>">Añadir</a>
+      </li>
+    <% }) %>
+  </ul>
+
+  <h2>🧺 Carrito espiritual</h2>
+
+  <% if (carrito && carrito.length > 0) { %>
+    <ul>
+      <% carrito.forEach(item => { %>
+        <li><%= item %></li>
+      <% }) %>
+    </ul>
+
+    <a href="/carrito/vaciar">Vaciar carrito</a>
+  <% } else { %>
+    <p>El carrito está vacío.</p>
+  <% } %>
+
+</body>
+</html>
