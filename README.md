@@ -1,4 +1,4 @@
-# Sueños Valenti – Portal de Sesiones de Supra Conciencia
+# Sueños V – Portal de Sesiones de Supra Conciencia
 
 Proyecto desarrollado como parte de mi formación en **Desarrollo de Aplicaciones Web**, enfocado en el **backend con Node.js y Express**, utilizando **EJS** para el renderizado de vistas en servidor.
 
